@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,500;1,600&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+	box-sizing: border-box;
+}
+body{
+	background-color: #1F2023;
+}
+/* Header design */
+header{
+	background-color:#1f2023;
+	width: 100%;
+	height: 40px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+#logo{
+	padding-left: 5%;
+}
+#navigation{
+	padding-right: 5%;
+}
+#navigation ul{
+	display: flex;
+	list-style-type: none;
+}
+#navigation li, #navigation a{
+	padding-left: 20px;
+	font-family: "Roboto Mono";
+	font-weight: 600;
+	color: #ecf0f1;
+	text-decoration: none;
+	transition: all 0.15s ease;
+}
+#navigation a:hover{
+	color: #1FC600;
+}
+/* Footer Edit */
+.footer{
+    font-family: "Roboto Mono";
+    font-weight: 100;
+    width:100%;
+    background-color:rgb(31, 32, 35);
+    color: #5e5e5e;
+    text-align: center;
+    margin-top:auto;
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 20px;
+}
+#desno, #desno, #sredina{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#desno p, #levo p, #sredina p{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+#sredina img{
+	height: 50px;
+}
+#copyright{
+	font-size: 25px;
+}
+/*Social Media*/
+.dugmeSocial{
+	display: flex;
+	margin-left: 60px;
+	text-align: center;
+}
+.ikonica{
+	font-size: 30px;
+}
+.dugmeSocial a:hover, .contentVert a:hover{
+	color:#1FC600;
+	transition: all 0.15s ease;
+}
+.dugmeSocial a{
+	color: #5E5E5E;
+	transition: all 0.15s ease;
+}
+/* Content Sajta */
+.telo{
+	background-color:#1f2023;
+	border: 1px solid #ccc;
+    justify-content: center;
+    align-items: center;
+}
+.contentLD{
+	margin: 20px 0px;
+	display: flex;    
+	justify-content: center;
+    align-items: center;
+}
+.sadrzaj{
+	display: flex;
+    width: 80%;
+	align-items: center;
+}
+.levo, .desno{
+	flex: 1;
+	text-align: left;
+}
+.desno{
+	text-align: right;
+}
+.contentVert{
+    text-align: center;
+    padding: 20px;
+    margin: 10px;
+    border: 2px dashed #ccc;
+}
+.pozadina1 {
+    background-image: url("../images/djlanding.jpg"); 
+	width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 125px 0;
+}
+.telo h1{
+	font-family: "Roboto Mono";
+	font-weight: 800;
+	font-size: 50px;
+	color: #1FC600;
+	text-align: center;
+}
+.telo h2{
+	font-family: "Roboto Mono";
+	font-weight: 600;
+	color: #1FC600;
+	text-align: center;
+}
+.telo h3{
+	font-family: "Roboto Mono";
+	font-weight: 500;
+	color: #1FC600;
+	text-align: center;
+}
+.telo h4{
+	font-family: "Roboto Mono";
+	font-weight: 400;
+	color: #1FC600;
+	text-align: center;
+}
+.telo p{
+	font-family: "Roboto Mono";
+	font-weight: 400;
+	color: #1FC600;
+	text-align: center;
+	font-size: 18px;
+}
+/* Fowma :3 pozdrav za pregledace :wave: */
+.forma{
+	width: 600px;
+	margin: 0px auto;
+}
+.forma form{
+	display: flex;
+	flex-direction: column;
+	border-radius: 5px;
+}
+.forma label{
+	text-align: center;
+	font-family: "Roboto Mono";
+	font-weight: 300;
+	font-size: 20px;
+	color: white;
+}
+.forma input{
+	font-family: "Roboto Mono";
+	text-align: center;
+	width: 75%;
+	border-radius: 25px;
+	margin: 0px auto;
+	height: 25px;
+	background-color: #36373d;
+	color: white;
+}
+.forma input:hover{
+	box-shadow: 2px 3px 3px rgba(12, 78, 0, 1);
+}
+.forma input[type="submit"]{
+	width: 20%;
+}
+.forma select{
+	margin: 0px auto;
+	color: green;
+}
+/* Case specific*/
+.lokacijaSlika{
+	align-items: center;
+	justify-content: center;
+	background-image: url("../images/lokacija.png"); 
+	height: 275px;
+	background-repeat: no-repeat;
+}
+.telo img{
+	width: 15%;
+}
+#slikaSkrlx{
+	border-radius: 75px;
+	border: 5px dotted white;
+	width: 50%;
+}
+#slikaYungLean{
+	width: 50%;
+	border-radius: 75px;
+	border: 5px dotted white;
+}
+.outline{
+	text-shadow: 
+    1px 0 0 black, /*right */
+    0 1px 0 black, /*top */
+    -1px 0 0 black, /*left */
+    0 -1px 0 black; /*bottom */
+}
+.slika h4{
+	text-shadow:  1px 1px white;
+}
+.selected a{
+	color:#1FC600;
+}
+button{
+	justify-content: center;
+	align-items: center;
+}
+.contentVert a{
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+}
+.fakeDugme{
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+.tabela{
+	font-family: "Roboto Mono";
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.tabela table{
+	margin: 20px;
+	padding: 25px;
+	background-color: #242529;
+	width: 600px;
+}
+.tabela table:hover{
+	background-color: #36373d;
+	transform: scale(1.10, 1.10);
+	transition: all 0.15s ease;
+}
+.tabela table th{
+	color: #1FC600;
+}
+#picJa{
+	width: 400px;
+	border: 5px dotted white;
+	border-radius: 75px;
+}
+#picMojaV{
+	border: 5px dotted white;
+	border-radius: 75px;
+	width: 400px;
+}
+#picMojaH{
+	width: 600px;
+	border: 5px dotted white;
+	border-radius: 25px;
+}
+.contentLSD{
+	margin-bottom: 100px;
+	align-items: center;
+	justify-content: center;
+	display: flex;
+	flex-direction: row;
+}
+.slikaO img{
+	width: 600px;
+	border-radius: 20px;
+	border: 2px solid white;
+}
+.slikaO{
+	margin: 0px auto;
+}
+#spacer{
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+/* Galerija */
+.galerija{
+	width: 80%;
+	height: 350px;
+	display: flex;
+	margin: 0px auto;
+}
+.slika{
+	display: flex;
+	color: rgba(0,0,0,0);
+	justify-content: center;
+	align-items: center;
+	margin: 0px auto;
+	background-color: yellow;
+	width: 470px;
+	height: 300px;
+	filter: grayscale(1);
+}
+.slika h4{
+	visibility: hidden;
+	font-size: 20px;
+	filter: grayscale(0);
+}
+.slika:hover > h4{
+	visibility: visible;
+	filter: grayscale(0);
+	transform: scale(1.2, 1.2);
+	transition: all 0.15s ease;
+}
+.slika:hover{
+	visibility: visible;
+	filter: grayscale(0);
+	transform: scale(1.10, 1.10);
+	transition: all 0.15s ease;
+}
+.slika h4:hover{
+	visibility: visible;
+}
+.sPrva{
+	background-image: url("../images/kerosel.jpg");
+}
+.sDruga{
+	background-image: url("../images/kerosel.jpg");
+	background-position: 10% 0%;
+}
+.sTreca{
+	background-image: url("../images/kerosel.jpg");
+	background-position: 20% 0%;
+}
+.sCetvrta{
+	background-image: url("../images/kerosel.jpg");
+	background-position: 30% 0%;
+}
+.sPeta{
+	background-image: url("../images/kerosel.jpg");
+	background-position: 40% 0%;
+}
+.sPeta{
+	background-image: url("../images/kerosel.jpg");
+	background-position: 50% 0%;
+}
+.sSest{
+	background-image: url("../images/kerosel.jpg");
+	background-position: 60% 0%;
+}
+.xPrva{
+	background-image: url("../images/kerosel.jpg");
+	background-position: 70% 0%;
+}
+.xDruga{
+	background-image: url("../images/kerosel.jpg");
+	background-position: 80% 0%;
+}
+.xTreca{
+	background-image: url("../images/kerosel.jpg");
+	background-position: 90% 0%;
+}
+.xCetvrta{
+	background-image: url("../images/kerosel.jpg");
+	background-position: 100% 0%;
+}
+.xPeta{
+	background-image: url("../images/kerosel.jpg");
+	background-position: 40% 0%;
+}
+.divider{
+	margin-bottom: 25px;
+}
+#cena{
+	text-align: center;
+}
