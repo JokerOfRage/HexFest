@@ -37,6 +37,9 @@ header{
 #navigation a:hover{
 	color: #1FC600;
 }
+#navigation .selected a{
+	color:#1FC600;
+}
 /* Footer Edit */
 .footer{
     font-family: "Roboto Mono";
@@ -66,7 +69,7 @@ header{
 #copyright{
 	font-size: 25px;
 }
-/*Social Media*/
+/* Social Media */
 .dugmeSocial{
 	display: flex;
 	margin-left: 60px;
@@ -153,6 +156,13 @@ header{
 	text-align: center;
 	font-size: 18px;
 }
+.lokacijaSlika{
+	align-items: center;
+	justify-content: center;
+	background-image: url("../images/lokacija.png"); 
+	height: 275px;
+	background-repeat: no-repeat;
+}
 /* Fowma :3 pozdrav za pregledace :wave: */
 .forma{
 	width: 600px;
@@ -162,6 +172,7 @@ header{
 	display: flex;
 	flex-direction: column;
 	border-radius: 5px;
+	margin-bottom: 10px;
 }
 .forma label{
 	text-align: center;
@@ -190,55 +201,8 @@ header{
 	margin: 0px auto;
 	color: green;
 }
-/* Case specific*/
-.lokacijaSlika{
-	align-items: center;
-	justify-content: center;
-	background-image: url("../images/lokacija.png"); 
-	height: 275px;
-	background-repeat: no-repeat;
-}
-.telo img{
-	width: 15%;
-}
-#slikaSkrlx{
-	border-radius: 75px;
-	border: 5px dotted white;
-	width: 50%;
-}
-#slikaYungLean{
-	width: 50%;
-	border-radius: 75px;
-	border: 5px dotted white;
-}
-.outline{
-	text-shadow: 
-    1px 0 0 black, /*right */
-    0 1px 0 black, /*top */
-    -1px 0 0 black, /*left */
-    0 -1px 0 black; /*bottom */
-}
-.slika h4{
-	text-shadow:  1px 1px white;
-}
-.selected a{
-	color:#1FC600;
-}
-button{
-	justify-content: center;
-	align-items: center;
-}
-.contentVert a{
-	text-decoration: none;
-	color: white;
-	padding: 10px;
-	border-radius: 10px;
-	border: 1px solid #ccc;
-}
-.fakeDugme{
-	margin-top: 20px;
-	margin-bottom: 10px;
-}
+
+/* Tabele */
 .tabela{
 	font-family: "Roboto Mono";
 	color: white;
@@ -261,21 +225,48 @@ button{
 .tabela table th{
 	color: #1FC600;
 }
+
+/* Case specific*/
+#cena{
+	text-align: center;
+}
+.telo img{
+	width: 15%;
+}
+#slikaSkrlx{
+	border-radius: 75px;
+	border: 5px dotted white;
+	width: 50%;
+}
+#slikaYungLean{
+	width: 50%;
+	border-radius: 75px;
+	border: 5px dotted white;
+}
+.outline{
+	text-shadow: 
+    1px 0 0 black, /*right */
+    0 1px 0 black, /*top */
+    -1px 0 0 black, /*left */
+    0 -1px 0 black; /*bottom */
+}
+.contentVert a{
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+	border-radius: 10px;
+	border: 1px solid #ccc;
+}
+.fakeDugme{
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
 #picJa{
 	width: 400px;
 	border: 5px dotted white;
 	border-radius: 75px;
 }
-#picMojaV{
-	border: 5px dotted white;
-	border-radius: 75px;
-	width: 400px;
-}
-#picMojaH{
-	width: 600px;
-	border: 5px dotted white;
-	border-radius: 25px;
-}
+/* O meni Slike Cont */
 .contentLSD{
 	margin-bottom: 100px;
 	align-items: center;
@@ -290,10 +281,6 @@ button{
 }
 .slikaO{
 	margin: 0px auto;
-}
-#spacer{
-	margin-top: 25px;
-	margin-bottom: 25px;
 }
 /* Galerija */
 .galerija{
@@ -332,6 +319,9 @@ button{
 }
 .slika h4:hover{
 	visibility: visible;
+}
+.slika h4{
+	text-shadow:  1px 1px white;
 }
 .sPrva{
 	background-image: url("../images/kerosel.jpg");
@@ -382,7 +372,4 @@ button{
 }
 .divider{
 	margin-bottom: 25px;
-}
-#cena{
-	text-align: center;
 }
