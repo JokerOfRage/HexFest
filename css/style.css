@@ -68,6 +68,8 @@ header{
 }
 #copyright{
 	font-size: 25px;
+	justify-content: center;
+	text-align: center;
 }
 /* Social Media */
 .dugmeSocial{
@@ -145,18 +147,18 @@ header{
 }
 .telo h4{
 	font-family: "Roboto Mono";
-	font-weight: 400;
+	font-weight: 500;
 	color: #1FC600;
 	text-align: center;
 }
 .telo p{
 	font-family: "Roboto Mono";
-	font-weight: 400;
+	font-weight: 300;
 	color: #1FC600;
 	text-align: center;
 	font-size: 18px;
 }
-.lokacijaSlika{
+#lokacijaSlika{
 	align-items: center;
 	justify-content: center;
 	background-image: url("../images/lokacija.png"); 
@@ -185,11 +187,11 @@ header{
 	font-family: "Roboto Mono";
 	text-align: center;
 	width: 75%;
-	border-radius: 25px;
 	margin: 0px auto;
 	height: 25px;
 	background-color: #36373d;
 	color: white;
+	border: 0px solid white;
 }
 .forma input:hover{
 	box-shadow: 2px 3px 3px rgba(12, 78, 0, 1);
@@ -198,8 +200,12 @@ header{
 	width: 20%;
 }
 .forma select{
+	text-align: center;
+	font-weight: 600;
+	height: 25px;
 	margin: 0px auto;
-	color: green;
+	color: #1FC600;
+	background-color: #36373d;
 }
 
 /* Tabele */
@@ -224,24 +230,32 @@ header{
 }
 .tabela table th{
 	color: #1FC600;
+	font-size: 20px;
+	font-weight: 600;
+	padding-bottom: 20px;
+}
+.tabela td{
+	font-weight: 300;
 }
 
 /* Case specific*/
 #cena{
+	padding-top: 20px;
 	text-align: center;
+	font-weight: 600;
 }
 .telo img{
 	width: 15%;
 }
 #slikaSkrlx{
-	border-radius: 75px;
-	border: 5px dotted white;
+	border: 2px dashed white;
+	border-radius: 15px;
 	width: 50%;
 }
 #slikaYungLean{
 	width: 50%;
-	border-radius: 75px;
-	border: 5px dotted white;
+	border-radius: 15px;
+	border: 2px dashed white;
 }
 .outline{
 	text-shadow: 
@@ -263,8 +277,8 @@ header{
 }
 #picJa{
 	width: 400px;
-	border: 5px dotted white;
-	border-radius: 75px;
+	border: 2px dashed white;
+	border-radius: 15px;
 }
 /* O meni Slike Cont */
 .contentLSD{
