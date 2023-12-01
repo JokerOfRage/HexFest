@@ -117,14 +117,30 @@ header{
     text-align: center;
     padding: 20px;
     margin: 10px;
-    border: 2px dashed #ccc;
+	border: 2px dashed #ccc;
 }
 .pozadina1 {
     background-image: url("../images/djlanding.jpg"); 
 	width: 100%;
     background-size: cover;
     background-attachment: fixed;
-    padding: 125px 0;
+    padding: 150px 0;
+}
+.pozadina2 {
+    background-image: url("../images/festlanding.jpg"); 
+	width: 100%;
+    background-size: cover;
+	background-position: 25% 80%;
+    padding: 250px 0;
+	filter: grayscale(1);
+}
+.pozadina3 {
+    background-image: url("../images/dplanding.jpg"); 
+	width: 100%;
+    background-size: cover;
+	background-position: 10% 40%;
+    padding: 200px 0;
+	filter: grayscale(1);
 }
 .telo h1{
 	font-family: "Roboto Mono";
@@ -154,14 +170,15 @@ header{
 .telo p{
 	font-family: "Roboto Mono";
 	font-weight: 300;
-	color: #1FC600;
+	color: white;
 	text-align: center;
 	font-size: 18px;
 }
+.telo 
 #lokacijaSlika{
 	align-items: center;
 	justify-content: center;
-	background-image: url("../images/lokacija.png"); 
+	background-image: url("../images/lokacija.jpg"); 
 	height: 275px;
 	background-repeat: no-repeat;
 }
@@ -193,11 +210,12 @@ header{
 	color: white;
 	border: 0px solid white;
 }
-.forma input:hover{
-	box-shadow: 2px 3px 3px rgba(12, 78, 0, 1);
+.forma input[type="submit"]:hover{
+	box-shadow: 0px 0px 4px #1FC600;
 }
 .forma input[type="submit"]{
 	width: 20%;
+	transition: 0.2s;
 }
 .forma select{
 	text-align: center;
@@ -238,47 +256,64 @@ header{
 	font-weight: 300;
 }
 
+/* Dugme */
+.fakeDugme a{
+	text-decoration: none;
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #36373D;
+}
+.fakeDugme{
+	font-size: 18px;
+	font-family: "Roboto Mono";
+	margin-top: 20px;
+	margin-bottom: 10px;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: 0.1s ease-out;
+}
+.fakeDugme a:hover{
+	border-bottom: 3px solid #1FC600;
+}
+.fakeDugme a:active{
+	background-color: white;
+	color: black;
+	border-bottom: 3px solid #1FC600;
+}
 /* Case specific*/
 #cena{
 	padding-top: 20px;
 	text-align: center;
 	font-weight: 600;
 }
-.telo img{
-	width: 15%;
-}
-#slikaSkrlx{
+.landingPortret{
 	border: 2px dashed white;
 	border-radius: 15px;
 	width: 50%;
-}
-#slikaYungLean{
-	width: 50%;
-	border-radius: 15px;
-	border: 2px dashed white;
-}
-.outline{
-	text-shadow: 
-    1px 0 0 black, /*right */
-    0 1px 0 black, /*top */
-    -1px 0 0 black, /*left */
-    0 -1px 0 black; /*bottom */
-}
-.contentVert a{
-	text-decoration: none;
-	color: white;
-	padding: 10px;
-	border-radius: 10px;
-	border: 1px solid #ccc;
-}
-.fakeDugme{
-	margin-top: 20px;
-	margin-bottom: 10px;
 }
 #picJa{
 	width: 400px;
 	border: 2px dashed white;
 	border-radius: 15px;
+}
+.outline{
+	text-shadow: 
+    1px 0 0 black, 
+    0 1px 0 black, 
+    -1px 0 0 black,
+    0 -1px 0 black;
+}
+.uSlici{
+	font-size: 60px;
+}
+#belo{
+	color: white;
+	text-decoration: underline;
+}
+hr{
+	margin: 20px 0px;
+	border: 2px dashed white;
 }
 /* O meni Slike Cont */
 .contentLSD{
@@ -290,8 +325,10 @@ header{
 }
 .slikaO img{
 	width: 600px;
-	border-radius: 20px;
+	border-radius: 15px;
 	border: 2px solid white;
+	opacity: 0;
+	animation: fade 0.5s forwards;
 }
 .slikaO{
 	margin: 0px auto;
@@ -328,11 +365,8 @@ header{
 .slika:hover{
 	visibility: visible;
 	filter: grayscale(0);
-	transform: scale(1.10, 1.10);
-	transition: all 0.15s ease;
-}
-.slika h4:hover{
-	visibility: visible;
+	transform: scale(1.05, 1.05);
+	transition: all 0.2s ease;
 }
 .slika h4{
 	text-shadow:  1px 1px white;
@@ -386,4 +420,14 @@ header{
 }
 .divider{
 	margin-bottom: 25px;
+}
+
+/* animacija test */
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
