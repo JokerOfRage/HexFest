@@ -48,7 +48,6 @@ header{
     background-color:rgb(31, 32, 35);
     color: #5e5e5e;
     text-align: center;
-    margin-top:auto;
 	display: flex;
 	justify-content: space-between;
 	padding: 0px 20px;
@@ -68,14 +67,15 @@ header{
 }
 #copyright{
 	font-size: 25px;
-	justify-content: center;
-	text-align: center;
 }
 /* Social Media */
 .dugmeSocial{
 	display: flex;
 	margin-left: 60px;
 	text-align: center;
+}
+.dugmeSocial:nth-child(1){
+	margin-left: 0px;
 }
 .ikonica{
 	font-size: 30px;
@@ -86,14 +86,11 @@ header{
 }
 .dugmeSocial a{
 	color: #5E5E5E;
-	transition: all 0.15s ease;
 }
 /* Content Sajta */
 .telo{
 	background-color:#1f2023;
 	border: 1px solid #ccc;
-    justify-content: center;
-    align-items: center;
 }
 .contentLD{
 	margin: 20px 0px;
@@ -142,42 +139,33 @@ header{
     padding: 200px 0;
 	filter: grayscale(1);
 }
-.telo h1{
+.telo h1,h2,h3,h4,p{
 	font-family: "Roboto Mono";
-	font-weight: 800;
+	text-align: center;
+}
+.telo h1{
+	font-weight: 600;
 	font-size: 50px;
 	color: #1FC600;
-	text-align: center;
 }
 .telo h2{
-	font-family: "Roboto Mono";
 	font-weight: 600;
 	color: #1FC600;
-	text-align: center;
 }
 .telo h3{
-	font-family: "Roboto Mono";
 	font-weight: 500;
 	color: #1FC600;
-	text-align: center;
 }
 .telo h4{
-	font-family: "Roboto Mono";
 	font-weight: 500;
 	color: #1FC600;
-	text-align: center;
 }
 .telo p{
-	font-family: "Roboto Mono";
 	font-weight: 300;
 	color: white;
-	text-align: center;
 	font-size: 18px;
 }
-.telo 
 #lokacijaSlika{
-	align-items: center;
-	justify-content: center;
 	background-image: url("../images/lokacija.jpg"); 
 	height: 275px;
 	background-repeat: no-repeat;
@@ -190,8 +178,7 @@ header{
 .forma form{
 	display: flex;
 	flex-direction: column;
-	border-radius: 5px;
-	margin-bottom: 10px;
+	margin: 10px 0px;
 }
 .forma label{
 	text-align: center;
@@ -208,18 +195,18 @@ header{
 	height: 25px;
 	background-color: #36373d;
 	color: white;
-	border: 0px solid white;
+	border: 0px solid black;
 }
 .forma input[type="submit"]:hover{
 	box-shadow: 0px 0px 4px #1FC600;
+	transition: 0.2s;
 }
 .forma input[type="submit"]{
 	width: 20%;
-	transition: 0.2s;
 }
 .forma select{
-	text-align: center;
-	font-weight: 600;
+	text-align: left;
+	font-weight: 500;
 	height: 25px;
 	margin: 0px auto;
 	color: #1FC600;
@@ -233,7 +220,6 @@ header{
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	justify-content: center;
 }
 .tabela table{
 	margin: 20px;
@@ -248,7 +234,7 @@ header{
 }
 .tabela table th{
 	color: #1FC600;
-	font-size: 20px;
+	font-size: 25px;
 	font-weight: 600;
 	padding-bottom: 20px;
 }
@@ -271,10 +257,10 @@ header{
 	margin-bottom: 10px;
 	text-decoration: none;
 	text-transform: uppercase;
-	transition: 0.1s ease-out;
 }
 .fakeDugme a:hover{
 	border-bottom: 3px solid #1FC600;
+	transition: 0.1s ease-out;
 }
 .fakeDugme a:active{
 	background-color: white;
@@ -284,6 +270,7 @@ header{
 /* Case specific*/
 #cena{
 	padding-top: 20px;
+	font-size: 20px;
 	text-align: center;
 	font-weight: 600;
 }
@@ -293,16 +280,12 @@ header{
 	width: 50%;
 }
 #picJa{
-	width: 400px;
+	width: 50%;
 	border: 2px dashed white;
 	border-radius: 15px;
 }
 .outline{
-	text-shadow: 
-    1px 0 0 black, 
-    0 1px 0 black, 
-    -1px 0 0 black,
-    0 -1px 0 black;
+	text-shadow: 4px 3px rgba(0,0,0,0.8);
 }
 .uSlici{
 	font-size: 60px;
@@ -317,20 +300,20 @@ hr{
 }
 /* O meni Slike Cont */
 .contentLSD{
-	margin-bottom: 100px;
+	margin: 30px 0px;
 	align-items: center;
-	justify-content: center;
 	display: flex;
 	flex-direction: row;
 }
 .slikaO img{
-	width: 600px;
+	width: 80%;
 	border-radius: 15px;
 	border: 2px solid white;
 	opacity: 0;
 	animation: fade 0.5s forwards;
 }
 .slikaO{
+	text-align: center;
 	margin: 0px auto;
 }
 /* Galerija */
@@ -342,31 +325,29 @@ hr{
 }
 .slika{
 	display: flex;
-	color: rgba(0,0,0,0);
 	justify-content: center;
 	align-items: center;
 	margin: 0px auto;
-	background-color: yellow;
 	width: 470px;
 	height: 300px;
 	filter: grayscale(1);
 }
 .slika h4{
 	visibility: hidden;
-	font-size: 20px;
+	font-size: 25px;
 	filter: grayscale(0);
 }
 .slika:hover > h4{
 	visibility: visible;
 	filter: grayscale(0);
 	transform: scale(1.2, 1.2);
-	transition: all 0.15s ease;
+	transition: all 0.2s ease;
 }
 .slika:hover{
 	visibility: visible;
 	filter: grayscale(0);
 	transform: scale(1.05, 1.05);
-	transition: all 0.2s ease;
+	transition: all 0.15s ease;
 }
 .slika h4{
 	text-shadow:  1px 1px white;
